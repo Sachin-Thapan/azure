@@ -5,12 +5,12 @@
 
     "location": {
       "type": "string",
-      "defaultValue": "southcentralus",
+      "defaultValue": "southcentralus"
     },
 
     "interfacename": {
       "type": "string",
-      "defaultValue": "interface200",
+      "defaultValue": "interface200"
     },
     
     "subnet_id": {
@@ -67,10 +67,10 @@
                             "loadBalancerBackendAddressPools": [
                               
                                 {
-                                   "id": "[if(not(equals(parameters('newOrExistinglb'), 'No')), variables('Backend_id') , json('null'))]"
+                                   "id": "[if(not(equals(parameters('newOrExistinglb'), 'No')), parameters('Backend_id') , json('null'))]"
                                                                 },
                                                                 {
-                                    "id": "[if(not(equals(parameters('newOrExistinglb'), 'No')), variables('PBackend_id') , json('null'))]"
+                                    "id": "[if(not(equals(parameters('newOrExistinglb'), 'No')), parameters('PBackend_id') , json('null'))]"
                                                                    }
                             ],
                             "applicationSecurityGroups": [
