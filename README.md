@@ -1,1 +1,2 @@
-# azure Storage account creation template
+# Testing Network Interface Deployment
+[![Deploy to Azure](https://azuredeploy.net/deploybutton.png)](https://azuredeploy.net/)
