@@ -1,0 +1,30 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "location": {
+      "value": "southcentralus"
+    },
+    "interfacename": {
+      "value": "interface1"
+    },
+    "subnet_id": {
+      "value": "/subscriptions/f4e750b2-c117-42c8-a0f9-b3de11c961dd/resourceGroups/rg_1117000_net/providers/Microsoft.Network/virtualNetworks/musa1azvnt117000/subnets/sn_10-117-0-128_25"
+    },
+    "newOrExistinglb": {
+      "value": "No"
+    },
+    "newOrExistingplb": {
+      "value": "No"
+    },
+    "Backend_id": {
+      "value": "/subscriptions/f4e750b2-c117-42c8-a0f9-b3de11c961dd/resourceGroups/rg_1117000_prod/providers/Microsoft.Network/loadBalancers/lb_std_1117000_prod_001/backendAddressPools/lb_std_1117000_prod_001-pool"
+    },
+    "PBackend_id": {
+      "value": "/subscriptions/f4e750b2-c117-42c8-a0f9-b3de11c961dd/resourceGroups/rg_1117000_prod/providers/Microsoft.Network/loadBalancers/plb_std_1117000_prod_001/backendAddressPools/plb_std_1117000_prod_001-pool"
+    },
+    "asgId": {
+      "value": "/subscriptions/f4e750b2-c117-42c8-a0f9-b3de11c961dd/resourceGroups/rg_1117000_net/providers/Microsoft.Network/applicationSecurityGroups/WLS_PROD_WEB_ASG"
+    }
+  }
+}
